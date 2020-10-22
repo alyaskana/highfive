@@ -1,0 +1,8 @@
+<header>
+  <%= link_to  "HighFive", home_path, class: 'logo' %>
+  <div class="links">
+    <%= link_to  "Главная", home_path, class: 'pagelink' + active_class(home_path) %>
+    <%= link_to  "О проекте", about_path, class: 'pagelink' + active_class(about_path) %>
+    <%= link_to  "Дать пять", "#subscribe", class: 'button' %>
+  </div>
+</header>

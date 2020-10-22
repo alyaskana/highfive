@@ -1,0 +1,19 @@
+@import 'roots';
+@import 'normalize';
+@import 'fonts';
+@import 'pages';
+
+body {
+  margin: 0;
+  font-family: 'Proxima Nova';
+  color: var(--black);
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,0 +1,58 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+@import 'index';
+@import 'about';
+
+header {
+  padding: 18px 50px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--logoblue);
+  }
+
+  .links {
+    .pagelink {
+      margin-right: 60px;
+      padding-bottom: 5px;
+    }
+
+    .active {
+      color: var(--blue);
+      border-bottom: 2px solid var(--blue);
+    }
+
+    .button {
+      font-weight: 600;
+      color: white;
+      background-color: var(--blue);
+      padding: 8px 50px;
+      border-radius: 36px;
+    }
+  }
+}
+
+footer {
+  padding: 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 3.69%, #F3F3F3 96.31%);
+
+  .logo {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .copyright {
+    text-align: right;
+    font-size: 14px;
+    color: #555555;
+  }
+}

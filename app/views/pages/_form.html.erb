@@ -1,0 +1,10 @@
+<div class="form-wrap">
+  <% if flash[:success] %>
+    <%= image_tag "high-five-icon.png", class: 'success-icon' %>
+  <% else %>
+    <%= form_for @subscriber do |f| %>
+      <%= f.email_field :email, placeholder: 'E-mail', class: 'email-input'%>
+      <%= f.submit 'Дать пять!', class: 'submit-btn'%>
+    <% end %>
+  <% end %>
+</div>
